@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bookify.Domain.Apartments;
+namespace Bookify.Domain.Shared;
 
 public record Currency
 {
@@ -21,6 +21,7 @@ public record Currency
         return All.FirstOrDefault(c => c.Code == code) ??
             throw new ApplicationException("The currency code is invalid");
     }
+
 
     public static readonly IReadOnlyCollection<Currency> All = new[]
     {

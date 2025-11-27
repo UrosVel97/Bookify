@@ -1,4 +1,5 @@
 ﻿using Bookify.Domain.Abstractions;
+using Bookify.Domain.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,7 @@ public sealed class Apartment : Entity
 
     public Money CleaningFee { get; private set; }
 
-    public DateTime? LastBookedonUtc { get; private set; }
+    public DateTime? LastBookedonUtc { get; internal set; }
 
     public List<Amenity> Amenities { get; private set; } = new();
 }
