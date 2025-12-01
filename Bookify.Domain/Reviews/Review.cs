@@ -42,6 +42,8 @@ internal class Review : Entity
 
     public DateTime CreatedOnUtc { get; private set; }
 
+
+    // Factory method for creating a Review
     public static Result<Review> Create(
        Booking booking,
        Rating rating,

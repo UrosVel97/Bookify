@@ -62,6 +62,8 @@ public sealed class Booking : Entity
 
     public DateTime? CancelledOnUtc { get; private set; }
 
+
+    //Factory method to create a Booking
     public static Booking Reserve(
         Apartment apartment,
         Guid userId,

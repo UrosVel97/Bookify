@@ -26,7 +26,8 @@ public sealed class User : Entity
 
     public Email Email { get; private set; }
 
-    //Factory method
+
+    //Factory method for creating a new User
     public static User Create(
         FirstName firstName,
         LastName lastName,

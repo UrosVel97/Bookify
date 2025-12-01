@@ -16,6 +16,7 @@ namespace Bookify.Domain.Bookings
         //Helper property which calculates what is the length in days
         public int LengthInDays => End.DayNumber - Start.DayNumber;
 
+        //Factory method to create a DateRange
         public static DateRange Create(DateOnly start, DateOnly end)
         {
             if(start>end)
