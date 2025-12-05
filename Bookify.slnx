@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="Bookify.Application/Bookify.Application.csproj" Id="7b655d74-53f2-4ddc-bffb-1003363209c2" />
     <Project Path="Bookify.Domain/Bookify.Domain.csproj" />
+    <Project Path="Bookify.Infrastructure/Bookify.Infrastructure.csproj" Id="d8bfb917-4841-4fa7-bee3-4c27267f120a" />
   </Folder>
   <Folder Name="/test/" />
 </Solution>
