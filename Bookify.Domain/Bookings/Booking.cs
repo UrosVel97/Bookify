@@ -91,6 +91,8 @@ public sealed class Booking : Entity
 
         apartment.LastBookedonUtc = utcNow;
 
+
+
         return booking;
     }
 
