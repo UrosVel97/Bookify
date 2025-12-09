@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Bookify.Domain.Reviews;
 
-internal class Review : Entity
+public sealed class Review : Entity
 {
     private Review(
         Guid id,
