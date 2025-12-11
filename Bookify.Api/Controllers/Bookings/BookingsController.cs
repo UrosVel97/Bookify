@@ -25,7 +25,7 @@ public class BookingsController : ControllerBase
         var query = new GetBookingQuery(id);
 
         var result = await _sender.Send(query, cancellationToken);
-        
+
         return result.IsSuccess ? Ok(result.Value) : NotFound();
     }
 
@@ -42,7 +42,7 @@ public class BookingsController : ControllerBase
 
         var result = await _sender.Send(command, cancellationToken);
 
-        if(result.IsFailure)
+        if (result.IsFailure)
         {
             return BadRequest(result.Error);
         }

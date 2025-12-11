@@ -1,5 +1,6 @@
 ﻿using Bookify.Application.Apartments.SearchApartments;
 using MediatR;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +26,7 @@ public class ApartmentsController : ControllerBase
         var query = new SearchApartmentsQuery(startDate, endDate);
 
         var result = await _sender.Send(query, cancellationToken);
-        
+
         return Ok(result.Value);
 
     }
