@@ -11,11 +11,11 @@ services:
   bookify-db:
     image: postgres:latest
     container_name: Bookify.Db
-    environment:
+    environment: 
       - POSTGRES_DB=bookify
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     volumes:
       - ./.containers/database:/var/lib/postgresql/data
-    ports:
+    ports: 
       - 5432:5432
